@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: "/Portfolio",
 
   siteMetadata: {
-    title: `Tanzil Chowduray | Software Engineer`,
+    title: `Tanzil Chowdury | Software Engineer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Tanzil Chowdhury`,
   },
