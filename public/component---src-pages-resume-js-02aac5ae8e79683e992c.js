@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{F2CN:function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),c=t.n(n),l=t("Wbzz");a.default=function(){return c.a.createElement("div",{className:"container"},c.a.createElement("h3",null,"Please contact me for the latest version of my resume!"),c.a.createElement(l.Link,{to:"/",className:"mail-contact",style:{marginRight:15}}," Homepage"),c.a.createElement("a",{className:"mail-contact",href:"mailto:tanzildev@gmail.com"},"Send Email"))}}}]);
+//# sourceMappingURL=component---src-pages-resume-js-02aac5ae8e79683e992c.js.map
