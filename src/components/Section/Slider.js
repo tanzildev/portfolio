@@ -4,7 +4,8 @@ import {Container,Col,Row} from 'react-bootstrap'
 import Typist from 'react-typist';
 import { motion } from "framer-motion";
 
-import AnimationImage from '../../images/about-img.gif'
+// import AnimationImage from '../../images/about-img.gif'
+import AnimationImage from '../../images/tanzil.gif'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
