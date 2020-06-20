@@ -1,18 +1,9 @@
 import React, { Component } from "react";
-import {Link as RouteLink} from 'gatsby'
+import { Link as RouteLink } from "gatsby";
 
-import {
-  Link,
- 
-  Events,
-  animateScroll as scroll,
-  scroller
-} from "react-scroll";
+import { Link, Events, animateScroll as scroll, scroller } from "react-scroll";
 
-import {Container,Col,Row,Navbar,Nav} from 'react-bootstrap'
-
- 
-
+import { Container, Col, Row, Navbar, Nav } from "react-bootstrap";
 
 export default class Navbars extends Component {
   // scrollToTop = () => {
@@ -21,9 +12,9 @@ export default class Navbars extends Component {
   constructor(props) {
     super(props);
     this.scrollToTop = this.scrollToTop.bind(this);
- this.state={
-  openNavbar:false
- }
+    this.state = {
+      openNavbar: false,
+    };
   }
 
   componentDidMount() {
@@ -42,7 +33,7 @@ export default class Navbars extends Component {
     scroller.scrollTo("scroll-to-element", {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart"
+      smooth: "easeInOutQuart",
     });
   }
   scrollToWithContainer() {
@@ -55,7 +46,7 @@ export default class Navbars extends Component {
       scroller.scrollTo("scroll-container", {
         duration: 800,
         delay: 0,
-        smooth: "easeInOutQuart"
+        smooth: "easeInOutQuart",
       });
     });
 
@@ -64,7 +55,7 @@ export default class Navbars extends Component {
         duration: 800,
         delay: 0,
         smooth: "easeInOutQuart",
-        containerId: "scroll-container"
+        containerId: "scroll-container",
       })
     );
   }
@@ -72,90 +63,69 @@ export default class Navbars extends Component {
     Events.scrollEvent.remove("begin");
     Events.scrollEvent.remove("end");
   }
-  openNavbar=()=>{
+  openNavbar = () => {
     this.setState({
-      openNavbar:!this.state.openNavbar
-    })
-  }
+      openNavbar: !this.state.openNavbar,
+    });
+  };
   render() {
     return (
-
       <Container fluid={true}>
-
-          <Row>
-            <Col>
+        <Row>
+          <Col>
             <Navbar expand="lg">
-
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-
-    <Nav className="mr-auto">
-
-     <div className="nav-menu">
-   <ul>
-     <li>
-     <Link
-                    activeClass="active"
-                    className="test1"
-                    to="test1"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    About
-                  </Link>
-     </li>
-     <li>
-     <Link
-                                    activeClass="active"
-                                    className="test2"
-                                    to="test2"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                  >
-                                    Experience
-                                  </Link>
-     </li>
-     <li>
-     <Link
-                                    activeClass="active"
-                                    className="test2"
-                                    to="test3"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                  >
-                                    Contact
-                                  </Link>
-     </li>
-     <li className="resume">
-
-     <RouteLink to="/resume">
-                                    Resume
-                                  </RouteLink>
-                                  
-     </li>
-   </ul>
-   </div>
-
-
-
-
-    </Nav>
-
-
-  </Navbar.Collapse>
-</Navbar></Col>
-          </Row>
-</Container>
-         
-
-
-  
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                  <div className="nav-menu">
+                    <ul>
+                      <li>
+                        <Link
+                          activeClass="active"
+                          className="test1"
+                          to="test1"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                        >
+                          About
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          activeClass="active"
+                          className="test2"
+                          to="test2"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                        >
+                          Experience
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          activeClass="active"
+                          className="test2"
+                          to="test3"
+                          spy={true}
+                          smooth={true}
+                          duration={500}
+                        >
+                          Contact
+                        </Link>
+                      </li>
+                      <li className="resume">
+                        <RouteLink to="/resume">Resume</RouteLink>
+                      </li>
+                    </ul>
+                  </div>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
-
-
-
